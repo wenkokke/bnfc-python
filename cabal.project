@@ -1,0 +1,3 @@
+packages:
+  BNFC-python.cabal
+  vendor/bnfc/source/BNFC.cabal

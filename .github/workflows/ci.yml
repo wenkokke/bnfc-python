@@ -65,6 +65,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+        with:
+          submodules: true
 
       - # Required to run job via act: https://github.com/nektos/act
         uses: actions/setup-python@v4
@@ -135,6 +137,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+        with:
+          submodules: true
 
       - # Required to run job via act: https://github.com/nektos/act
         uses: actions/setup-python@v4
@@ -161,6 +165,7 @@ jobs:
           ghc-version: ${{ env.DEFAULT_GHC_VERSION }}
           cabal-version: ${{ env.DEFAULT_CABAL_VERSION }}
 
+      - run: cabal v2-update
       - run: pipx run tox
 
   ################################################################################
@@ -201,7 +206,7 @@ jobs:
 
     environment:
       name: pypi
-      url: https://pypi.org/p/example-haskell-wheel
+      url: https://pypi.org/p/BNFC
 
     permissions:
       id-token: write # IMPORTANT: this permission is mandatory for trusted publishing

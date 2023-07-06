@@ -1,9 +1,9 @@
 import sys
-import example_haskell_wheel
+import bnfc
 
 
 def main() -> None:
-    example_haskell_wheel.main(sys.argv)
+    bnfc.main(sys.argv)
 
 
 if __name__ == "__main__":

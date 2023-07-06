@@ -1,7 +1,9 @@
-[![PyPI](https://img.shields.io/pypi/v/example-haskell-wheel)](https://pypi.org/project/example-haskell-wheel/)
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/wenkokke/example-haskell-wheel)
-[![GitHub Workflow Status](https://github.com/wenkokke/example-haskell-wheel/actions/workflows/ci.yml/badge.svg)](https://github.com/wenkokke/example-haskell-wheel/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/bnfc)](https://pypi.org/project/bnfc/)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/wenkokke/bnfc-python)
+[![GitHub Workflow Status](https://github.com/wenkokke/bnfc-python/actions/workflows/ci.yml/badge.svg)](https://github.com/wenkokke/bnfc-python/actions/workflows/ci.yml)
 
-# example-haskell-wheel
+# BNFC-python
 
-An experiment in publishing a Haskell library as a Python wheel.
+Python bindings for the BNF Converter.
+
+See: <https://bnfc.digitalgrammars.com>

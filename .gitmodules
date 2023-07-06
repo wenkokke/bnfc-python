@@ -1,0 +1,3 @@
+[submodule "vendor/bnfc"]
+	path = vendor/bnfc
+	url = git@github.com:BNFC/bnfc.git

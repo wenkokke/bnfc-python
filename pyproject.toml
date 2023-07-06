@@ -46,7 +46,6 @@ skip = [
   # PyPy builds do not work.
   "pp*",
 ]
-before-all = "cabal v2-update"
 test-command = "pytest {package}/tests"
 test-extras = "test"
 # 19-06-2023:
@@ -55,6 +54,9 @@ manylinux-aarch64-image = "wenkokke/manylinux_2_28_ghc944_aarch64"
 manylinux-i686-image = "wenkokke/manylinux2014_ghc944_i686"
 manylinux-x86_64-image = "wenkokke/manylinux2014_ghc944_x86_64"
 musllinux-x86_64-image = "wenkokke/musllinux_1_1_ghc944_x86_64"
+
+[tool.cibuildwheel.linux]
+before-all = "cabal v2-update"
 
 [tool.mypy]
 mypy_path = "src"

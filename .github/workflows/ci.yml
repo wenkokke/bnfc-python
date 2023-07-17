@@ -111,7 +111,7 @@ jobs:
         with:
           platforms: "386"
 
-      - uses: pypa/cibuildwheel@v2.14.0
+      - uses: pypa/cibuildwheel@v2.14.1
         with:
           output-dir: "./dist"
           config-file: "{package}/pyproject.toml"
